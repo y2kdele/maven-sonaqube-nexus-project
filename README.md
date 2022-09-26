@@ -9,6 +9,12 @@ Series of tutorial code snippets for use
 #Maven publish tutorial steps
 Publishing artifact to Nexus snapshot and release repo using maven.
 
+===============================================
+mvn sonar:sonar \
+  -Dsonar.projectKey=javawebapp \
+  -Dsonar.host.url=http://3.137.142.193:9000 \
+  -Dsonar.login=ac0c0afaa22df714fa1a00c4a19670c28fe7db85
+
 1. Create a snapshot repo using nexus, or use default coming in out of the box. DEFAULT 
 2. Create a release repo using nexus, or use default coming out of the box. DEFAULT
 3. Create a group repo having both release, snapshot and other third party repos. or use default coming out of the box.
